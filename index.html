@@ -25,7 +25,10 @@
         function bildeParadas(){
             if (!klik){
                 b.innerHTML="<img src=f1.jpg>";
-
+                klik=true;
+                document.getElementById("bilde").onclick=function(){
+                    bildeParadas();
+                }
             }
             
         }
